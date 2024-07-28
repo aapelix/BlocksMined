@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "blocksmined",
+	"version": "${version}",
+	"name": "BlocksMined",
+	"description": "A mod that tracks all blocks mined and then adds them to a scoreboard",
+	"authors": [
+		"aapelix"
+	],
+	"contact": {
+		"homepage": "https://aapelix.dev/",
+		"sources": "https://github.com/aapelix/BlocksMined"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blocksmined/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"blocksmined.BlocksMined"
+		]
+	},
+	"mixins": [
+		"blocksmined.mixins.json",
+		{
+			"config": "blocksmined.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
