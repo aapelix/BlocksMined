@@ -20,11 +20,7 @@
 		]
 	},
 	"mixins": [
-		"blocksmined.mixins.json",
-		{
-			"config": "blocksmined.client.mixins.json",
-			"environment": "client"
-		}
+		"blocksmined.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

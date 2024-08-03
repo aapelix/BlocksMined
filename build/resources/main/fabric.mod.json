@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "blocksmined",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"name": "BlocksMined",
 	"description": "A mod that tracks all blocks mined and then adds them to a scoreboard",
 	"authors": [
@@ -20,11 +20,7 @@
 		]
 	},
 	"mixins": [
-		"blocksmined.mixins.json",
-		{
-			"config": "blocksmined.client.mixins.json",
-			"environment": "client"
-		}
+		"blocksmined.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
