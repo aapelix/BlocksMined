@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "blocksmined",
-	"version": "1.2.0",
+	"version": "1.2.5",
 	"name": "BlocksMined",
 	"description": "A mod that tracks all blocks mined and then adds them to a scoreboard",
 	"authors": [
