@@ -4,37 +4,60 @@
 
 Any feedback/improvement ideas/bugs can be sent to `hello@aapelix.dev` or you can create an issue of it on Github
 
+All the commands below support minecraft's command arguments suggestions for help
+
 ### To set the display location for the scoreboard:
 ```
-/bmdisplay <DISPLAY POSITION>
+/bm display <display position>
 ```
 
-<DISPLAY POSITION> = THe position that you want to display the scoreboard in, like sidebar, belowname, list
-
+```
+/bm display sidebar
+/bm display list
+/bm display belowname
+```
 
 ### Changing the color of the scores in the scoreboard:
 ```
-/bmcolor <COLOR HERE>
+/bm color <color>
 ```
 
-Currently the **only supported colors are red and yellow**
+Currently the **only supported colors are red and yellow** due to minecraft's limitations
 
+### Change the display name of the scoreboard:
+
+```
+/bm display "<name>"
+```
+
+```
+/bm display "Test name"
+/bm display "Blocks Mined"
+```
+
+**The name has to be in quotation marks to work**
 
 ### To modify the scoreboard scores:
 
 ```
-/bmaddscore aapelix 100
-/bmremovescore aapelix 100
+/bm addscore <[player]> amount
+/bm removescore <[player]> amount
+```
+
+```
+/bm addscore aapelix 100
+/bm addscore @a 99
+/bm addscore @p 150
+/bm removescore aapelix 100
 ```
 
 to reset all scores:
 
 ```
-/bmreset
+/bm reset
 ```
 
-(you can use minecraft's built in commands to do stuff with the scoreboard but these commands are much more simplier)
-
+You can use minecraft's built in commands to do stuff with the scoreboard but these commands are much easier to use
 # Happy mining!
 
 ### Why did I make this?
@@ -42,4 +65,4 @@ to reset all scores:
 I've been looking for a mod to track these things on the SMP server that my friends and I play on, but everything I found was outdated or not working, so I decided to make one myself.
 
 ### New features coming soonTM:
-- amogus
+- Tracking per block, tool etc...
